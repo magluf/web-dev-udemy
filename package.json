@@ -1,0 +1,23 @@
+{
+  "name": "web-dev-udemy",
+  "version": "1.0.0",
+  "description": "Project following Udemy's Git a Web Developer Job course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magluf/web-dev-udemy.git"
+  },
+  "author": "Magluf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magluf/web-dev-udemy/issues"
+  },
+  "homepage": "https://github.com/magluf/web-dev-udemy#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}
