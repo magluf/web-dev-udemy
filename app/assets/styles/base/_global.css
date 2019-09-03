@@ -1,0 +1,14 @@
+:root {
+  --mainFont: 'Roboto', sans-serif;
+  --mainColor: #333;
+}
+
+body {
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
