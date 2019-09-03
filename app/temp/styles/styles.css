@@ -454,6 +454,16 @@ template {
   position: relative;
 }
 
+.large-hero__text-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
 :root {
   --mainFont: 'Roboto', sans-serif;
   --mainColor: #333;
