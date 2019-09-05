@@ -457,11 +457,36 @@ template {
   --mainOrange: #d59541;
 }
 
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper.medium {
+  max-width: 976px;
+}
+
+.wrapper.wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.large-hero-blue-bar {
+  border-bottom: 10px solid var(--mainBlue);
+}
+
 .large-hero {
   position: relative;
 }
 
-.large-hero__text-content {
+.large-hero.image {
+  display: block;
+}
+
+.large-hero.text-content {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -471,29 +496,53 @@ template {
   text-align: center;
 }
 
-.large-hero__title {
+.large-hero.title {
   font-weight: 300;
   color: var(--mainBlue);
-  font-size: 4.8rem;
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+@media (min-width: 530px) {
+
+.large-hero.title {
+    font-size: 4.8rem
+}
+  }
+
+.large-hero.subtitle {
+  font-weight: 300;
+  color: var(--mainBlue);
+  font-size: 1.5rem;
   margin: 0;
 }
 
-.large-hero__subtitle {
-  font-weight: 300;
-  color: var(--mainBlue);
-  font-size: 2.9rem;
-  margin: 0;
-}
+@media (min-width: 530px) {
 
-.large-hero__description {
+.large-hero.subtitle {
+    font-size: 2.9rem
+}
+  }
+
+.large-hero.description {
   color: white;
-  font-size: 1.875rem;
+  font-size: 1.1rem;
   font-weight: 100;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-  max-width: 30rem;
+  max-width: 17rem;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 530px) {
+
+.large-hero.description {
+    font-size: 1.875rem;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto
+}
+  }
 
 body {
   font-family: var(--mainFont);
@@ -519,6 +568,79 @@ img {
 }
 
 .btn.large {
-  font-size: 1.25rem;
   padding: 1.1rem 1.9rem;
+}
+
+@media (min-width: 530px) {
+
+.btn.large {
+    font-size: 1.25rem
+}
+  }
+
+.page-section {
+  background-color: var(--color, white);
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 800px) {
+
+.page-section {
+    padding: 4.5rem 0
+}
+  }
+
+.page-section.blue {
+  --color: var(--mainBlue);
+  color: white;
+}
+
+.headline {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: var(--mainBlue);
+}
+
+@media (min-width: 530px) {
+
+.headline {
+    font-size: 2.875rem;
+}
+  }
+
+.headline.centered {
+  text-align: center;
+}
+
+.headline.orange {
+  color: var(--mainOrange);
+}
+
+.headline.small {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 530px) {
+
+.headline.small {
+    font-size: 1.875rem
+}
+  }
+
+.headline.narrow {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline.light {
+  font-weight: 100;
+}
+
+.headline.b-margin-small {
+  margin-bottom: 0.5em;
+}
+
+.headline.b-margin-large {
+  margin-bottom: 1.6666em;
 }
