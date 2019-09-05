@@ -727,10 +727,16 @@ a {
   display: table;
 }
 
+@media (min-width: 530px) {
+
+.generic-content-container {
+    font-size: 1.125rem
+}
+  }
+
 .generic-content-container p {
   line-height: 1.65;
   font-weight: 300;
-  font-size: 1.125rem;
   margin: 1.8rem 0;
 }
 
