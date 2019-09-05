@@ -1,10 +1,11 @@
 @import 'normalize.css';
 @import 'base/_variables';
 @import 'base/_mixins';
+@import 'base/_global';
 @import 'modules/_wrapper';
 @import 'modules/_large-hero';
-@import 'base/_global';
 @import 'modules/_btn';
 @import 'modules/_page-section.css';
 @import 'modules/_headline.css';
 @import 'modules/_row.css';
+@import 'modules/_generic-content-container.css';

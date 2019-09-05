@@ -457,16 +457,43 @@ template {
   --mainOrange: #d59541;
 }
 
+body {
+  font-family: var(--mainFont);
+  color: var(--mainColor);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: var(--mainOrange);
+}
+
 .wrapper {
   /* border: 2px solid blue; */
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1200px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 530px) {
+.wrapper.b-margin {
+  margin-bottom: 1rem;
+}
+
+.wrapper.medium {
+  max-width: 976px;
+}
+
+@media (min-width: 800px) {
   .wrapper.light {
     padding-left: 0;
     padding-right: 0;
@@ -476,11 +503,11 @@ template {
     padding-left: 18px;
     padding-right: 18px;
   }
-  }
 
-.wrapper.medium {
-  max-width: 976px;
-}
+  .wrapper.b-margin {
+    margin-bottom: 3.9rem;
+  }
+  }
 
 .large-hero-blue-bar {
   border-bottom: 10px solid var(--mainBlue);
@@ -551,21 +578,6 @@ template {
     margin-right: auto
 }
   }
-
-body {
-  font-family: var(--mainFont);
-  color: var(--mainColor);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
 .btn {
   background-color: var(--color, var(--mainBlue));
@@ -640,6 +652,10 @@ img {
 }
   }
 
+.headline.no-t-margin {
+  margin-top: 0;
+}
+
 .headline.narrow {
   max-width: 500px;
   margin-left: auto;
@@ -663,7 +679,15 @@ img {
   text-align: center;
 }
 
+.row.b-margin-until-medium {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 800px) {
+  .row.b-margin-until-medium {
+    margin-bottom: 0;
+  }
+
   .row {
     text-align: left;
   }
@@ -673,9 +697,19 @@ img {
     width: 33.33%;
   }
 
+  .row.col-md-lg-4 {
+    float: left;
+    width: 37%;
+  }
+
   .row.col-md-8 {
     float: left;
     width: 66.67%;
+  }
+
+  .row.col-md-lg-8 {
+    float: left;
+    width: 63%;
   }
 
   .row.gutters > div {
@@ -691,4 +725,15 @@ img {
   content: '';
   clear: both;
   display: table;
+}
+
+.generic-content-container p {
+  line-height: 1.65;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 1.8rem 0;
+}
+
+.generic-content-container a {
+  font-weight: bold;
 }
