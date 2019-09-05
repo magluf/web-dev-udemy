@@ -1,0 +1,32 @@
+.row {
+  /* border: 2px solid yellow; */
+  text-align: center;
+}
+
+@mixin atMedium {
+  .row {
+    text-align: left;
+  }
+
+  .row.col-md-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row.col-md-8 {
+    float: left;
+    width: 66.67%;
+  }
+
+  .row.gutters > div {
+    padding-right: 65px;
+  }
+
+  .row.gutters div:last-child {
+    padding-right: 0px;
+  }
+}
+
+.row::after {
+  @mixin clearFix;
+}

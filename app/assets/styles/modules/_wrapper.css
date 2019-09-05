@@ -1,4 +1,5 @@
 .wrapper {
+  /* border: 2px solid blue; */
   padding-left: 18px;
   padding-right: 18px;
   max-width: 1200px;
@@ -6,11 +7,18 @@
   margin-right: auto;
 }
 
-.wrapper.medium {
-  max-width: 976px;
+@mixin atSmall {
+  .wrapper.light {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .wrapper.heavy {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
-.wrapper.wrapper {
-  padding-left: 0;
-  padding-right: 0;
+.wrapper.medium {
+  max-width: 976px;
 }
